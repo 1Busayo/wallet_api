@@ -36,7 +36,7 @@ https://okrawallet.herokuapp.com
 call this on postman using post request https://okrawallet.herokuapp.com/users
 request sample
 {
-   "email":"shola@gmail.com",
+   "email":"shola@mail.com",
     "firstName": "shola",
     "lastName": "james",
     "password": "abc12345678"
@@ -46,7 +46,7 @@ login
 https://okrawallet.herokuapp.com/login
 request sample
 {
-   "email":"shola@gmail.com",
+   "email":"shola@mail.com",
     "password": "abc12345678"
 }
 
