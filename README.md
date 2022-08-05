@@ -26,6 +26,25 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+
+
+## Run the app on heroku
+```bash
+
+https://okrawallet.herokuapp.com
+
+call this on postman using post request https://okrawallet.herokuapp.com/users
+request sample
+{
+   "email":"shola@gmail.com",
+    "firstName": "shola",
+    "lastName": "james",
+    "password": "abc12345678"
+
+
+}
+ ```
+
 ## Installation
 
 ```bash
