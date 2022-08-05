@@ -1,5 +1,5 @@
 import { Controller, Get, Post, Body, Param, UseGuards, NotFoundException } from "@nestjs/common";
-
+import { PrincipalGuard } from "src/guards/principal.guard";
 import { Users } from "../dto/Users";
 import { UsersRepo } from "../repositories/users.repo";
 
@@ -28,7 +28,7 @@ export class UsersController {
 
 
     @Get()
-
+    @UseGuards(PrincipalGuard)
     async getAllUsers(): Promise<Users[]> {
 
         return this.usersDB.findAll();
@@ -37,7 +37,7 @@ export class UsersController {
 
 
     @Get(":id")
-
+    @UseGuards(PrincipalGuard)
     async getUsersById(@Param("id") userid: string) {
 
 
