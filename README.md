@@ -40,9 +40,18 @@ request sample
     "firstName": "shola",
     "lastName": "james",
     "password": "abc12345678"
-
-
 }
+
+login
+https://okrawallet.herokuapp.com/login
+request sample
+{
+   "email":"shola@gmail.com",
+    "password": "abc12345678"
+}
+
+
+
  ```
 
 ## Installation
